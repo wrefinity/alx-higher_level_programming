@@ -12,6 +12,6 @@ def magic_calculation(a, b):
         tot = add(a, b)
         for i in range(4, 6):
             tot = add(tot, i)
-        return (c)
+        return (tot)
     else:
         return (sub(a, b))
