@@ -75,7 +75,7 @@ class SinglyLinkedList:
         nxt, prev = self.__head.next_node, self.__head
         while nxt is not None:
             if value < nxt.data:
-                past.next_node = Node(value, nxt)
+                prev.next_node = Node(value, nxt)
                 return
             prev = nxt
             nxt = nxt.next_node
