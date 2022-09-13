@@ -67,7 +67,7 @@ class Square:
                     j += 1
 
                 num = 0
-                while number < self.__size:
+                while num < self.__size:
                     print("{}".format("#"), end='')
                     num += 1
                 print()
