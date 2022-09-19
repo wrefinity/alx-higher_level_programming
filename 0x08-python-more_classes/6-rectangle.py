@@ -8,16 +8,30 @@ class Rectangle:
     """
     Rectangle class
     """
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """initializing the rectangle parameter"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __del__(self):
         """prints a string on an instance deleted"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    def __str__(self):
+        total = ""
+        if self.__height == 0 or self.width == 0:
+            return total
+        for i in range(self.__height):
+            total += ("#" * self.__width)
+            if i is not self.__height - 1:
+                total += "\n"
+        return total
     @property
     def width(self):
         """getter for the private instance attribute width"""
