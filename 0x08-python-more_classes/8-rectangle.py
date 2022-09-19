@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-Defines a class Rectangle
+ Rectangle class module
 """
 
 
 class Rectangle:
-    """Representation of a rectangle"""
+    """
+    Rectangle class
+    """
 
     number_of_instances = 0
     print_symbol = "#"
@@ -81,5 +83,5 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        """returns a string representation of the rectangle for reproduction"""
+        """returns a string representation of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
