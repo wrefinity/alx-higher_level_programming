@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-Defines a class Rectangle
+ Rectangle class module
 """
 
 
 class Rectangle:
-    """Representation of a rectangle"""
+    """
+    Rectangle class
+    """
     def __init__(self, width=0, height=0):
-        """initializing the rectangle by
-        setting the objet with width and height
-        """
+        """initializing the rectangle parameter"""
         self.width = width
         self.height = height
 
