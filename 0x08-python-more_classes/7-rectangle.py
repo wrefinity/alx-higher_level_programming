@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-Defines a class Rectangle
+ Rectangle class module
 """
 
 
 class Rectangle:
-    """Representation of a rectangle"""
+    """
+    Rectangle class
+    """
 
     number_of_instances = 0
     print_symbol = "#"
