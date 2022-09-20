@@ -16,22 +16,22 @@ def matrix_divided(matrix, div):
             New matrix containing the divided elements
             rounded to 2 decimal places
     """
-    prev_len = 0
-    error_mess = "matrix must be a matrix (list of lists) of integers/floats"
+    _len = 0
+    _message = "matrix must be a matrix (list of lists) of integers/floats"
     if type(matrix) is not list:
-        raise TypeError(error_mess)
+        raise TypeError(_message)
 
-    for block in matrix:    # matrix is a list
-        if type(block) is not list:
-            raise TypeError(error_mess)
+    for m in matrix:    # matrix is a list
+        if type(m) is not list:
+            raise TypeError(_message)
 
-        for element in block:
-            if type(element) is not int and type(element) is not float:
-                raise TypeError(error_mess)
+        for el in m:
+            if type(el) is not int and type(el) is not float:
+                raise TypeError(_message)
 
-        if len(block) != prev_len and prev_len != 0:
+        if len(m) != _len and _len != 0:
             raise TypeError("Each row of the matrix must have the same size")
-        prev_len = len(block)
+        _len = len(m)
 
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
