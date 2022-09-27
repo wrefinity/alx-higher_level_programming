@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 function to write to file
 """
 
@@ -9,7 +9,7 @@ def write_file(filename="", text=""):
         Args:
             filename (str): name of file.
             text (str): text to be written.
-            Return: text written
+            Return: the number of characters written
     """
     with open(filename, "w", encoding="utf-8") as file:
         data = file.write(text)
