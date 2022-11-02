@@ -1,7 +1,7 @@
--- This script uses the hbtn_0d_tvshows database to
+-- A script that uses the hbtn_0d_tvshows database and
 -- lists all genres of the show Dexter.
-
 -- Use of Join to get required data
+
 SELECT tv_genres.name
 FROM tv_genres
 JOIN tv_show_genres
