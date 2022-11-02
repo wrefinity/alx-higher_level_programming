@@ -1,5 +1,5 @@
--- This script lists all shows without the genre Comedy in the database hbtn_0d_tvshows.
-
+-- A script that lists all shows without the genre Comedy
+-- in the database hbtn_0d_tvshows.
 -- Use of inner join, to join more than 2 tables
 
 SELECT tv_shows.title
