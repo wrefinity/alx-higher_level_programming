@@ -1,7 +1,5 @@
--- This script creates the database hbtn_0d_usa and the table
--- cities (in the database hbtn_0d_usa) on your MySQL server.
+-- A script that creates the database hbtn_0d_usa and the table cities.
 
--- Creating the database
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
 -- cd/use the database created
