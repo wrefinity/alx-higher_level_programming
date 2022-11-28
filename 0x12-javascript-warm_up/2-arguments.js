@@ -6,4 +6,4 @@ if (argc === 2) {
   console.log('Argument found');
 } else if (argc > 3) {
   console.log('Arguments found');
-
+}
