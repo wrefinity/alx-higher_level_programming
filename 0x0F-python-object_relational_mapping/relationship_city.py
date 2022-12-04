@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-defines class schema respresntation
+defines city schema with relationship
 """
 
 import sqlalchemy

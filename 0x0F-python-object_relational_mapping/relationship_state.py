@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-state schema
+state schema with relationship definition
 """
 
 import sqlalchemy
