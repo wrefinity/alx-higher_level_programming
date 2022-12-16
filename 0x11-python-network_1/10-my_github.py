@@ -7,8 +7,6 @@ if __name__ == '__main__':
     from requests import get
     from requests.auth import HTTPBasicAuth
 
-    url = "https://api.github.com/user"
-    response = get(
-        url, auth=HTTPBasicAuth(sys.argv[1], sys.argv[2]))
-    res_dict = response.json()
-    print(res_dict.get('id'))
+    auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
+    r = requests.get("https://api.github.com/user", auth=auth)
+    print(r.json().get("id"))
