@@ -2,11 +2,11 @@
 """Listing 10 commits in a repo"""
 
 if __name__ == '__main__':
-    import sys
+    from sys import argv
     import requests
 
     url = 'https://api.github.com/repos/{}/{}/commits'.format(
-        sys.argv[2], sys.argv[1])
+        argv[2], argv[1])
     r = requests.get(url)
     commits = r.json()
     try:
