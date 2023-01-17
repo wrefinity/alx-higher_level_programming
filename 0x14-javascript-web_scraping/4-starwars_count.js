@@ -2,7 +2,7 @@
 /* print the number of movie the character
 wedge antilles is present */
 
-const request = require('request');
+const request = require("request");
 const url_api = process.argv[2];
 
 request(url_api, (err, response, body) => {
@@ -13,11 +13,11 @@ request(url_api, (err, response, body) => {
     for (let i = 0; i < results.length; i++) {
       const characters = results[i].characters;
       for (let j = 0; j < characters.length; j++) {
-        if (characters[j].search('18') > 0) {
+        if (characters[j].search("18") > 0) {
           count++;
         }
       }
     }
     console.log(count);
   }
-});i
+});
